@@ -15,9 +15,13 @@ Command example: `./donut mimikatz.exe -a 2`</br>
 Then, with mimikatz's shellcode, you must create an injector which is using syscalls in order to bypass AV/EDR which is mainly focused on Userland API hookings. Before implementing the use of *syscalls*, it is necessary to first identify the native "syscall" equivalent of the Windows API used in the baseline code.
 
 >Native API
-
+</br>
 >NtOpenProcess
+</br>
 >NtAllocateVirtualMemory
+</br>
 >NtWriteVirtualMemory
+</br>
 >NtCreateThreadEx
+</br>
 >NtClose
